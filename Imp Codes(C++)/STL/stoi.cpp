@@ -1,11 +1,14 @@
 // Conversion from string to integer or double and vice versa
 // stoi -> string(s) to(to) integer(i) [remember technique]
+// stoll -> string to long long
 // stod -> string(s) to(to) double(d)
 
 #include <bits/stdc++.h>
 using namespace std;
 
 #define fastio() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+
+#define ll long long
 
 void solve1()
 {
@@ -35,6 +38,7 @@ void solve3()
     string numberText = "123";
     int number = stoi(numberText);  
     // becomes 123
+    ll number = stoll(numberText);
     
     string decimalText = "45.67";
     double decimal = stod(decimalText);  
